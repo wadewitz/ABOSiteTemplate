@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<!-- DW6 -->
+<head>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+
+<link rel="shortcut icon" href="../images/favicon.ico" />
+
+<title>Aphra Behn Online: Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../behn.css" type="text/css" />
+<script language="JavaScript" type="text/javascript">
+//--------------- LOCALIZEABLE GLOBALS ---------------
+var d=new Date();
+var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+//Ensure correct for language. English is "January 1, 2004"
+var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+//---------------   END LOCALIZEABLE   ---------------
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+</script>
+<style type="text/css">
+<!--
+a:hover {
+	color: #FF9999;
+	text-decoration: underline;
+}
+a:visited {
+	color: #990066;
+	text-decoration: none;
+}
+a:link {
+	color: #990066;
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.style2 {
+	background-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.style3 {
+	text-align: left;
+	background-color: #99CC66;
+}
+.style8 {
+	font-size: medium;
+	color: #990066;
+}
+.style11 {
+	background-color: #E6E0EC;
+}
+.style24 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #000000;
+}
+.style16 {
+	font-weight: normal;
+}
+.style25 {
+	font-size: large;
+	color: #990066;
+	text-align: center;
+}
+.style26 {
+	color: #000000;
+	line-height: 20px;
+	margin-top: 0px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+.style21 {
+	font-size: medium;
+	background-color: #E6E0EC;
+}
+.style34 {
+	background-color: #99CC66;
+}
+.style42 {
+	font-size: small;
+	color: #990066;
+}
+.style43 {
+	color: #000000;
+	line-height: 20px;
+	margin-top: 0px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.style33 {
+	font-size: medium;
+	background-color: #99CC66;
+}
+.style27 {
+	font-family: Arial;
+}
+.style36 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	background-color: #99CC66;
+}
+.style38 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+.style40 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style44 {
+	color: #333333;
+	line-height: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #99CC66;
+}
+.style45 {
+	color: #990066;
+	line-height: 22px;
+	letter-spacing: .2em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: small;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style46 {
+	font-size: small;
+}
+.style47 {
+	border: 0 solid #990066;
+	background-color: #000000;
+	text-align: left;
+}
+.style48 {
+	border-top-style: none;
+}
+.style50 {
+	font-family: Tahoma;
+	font-size: x-small;
+}
+.style51 {
+	color: #FFFFFF;
+}
+.style52 {
+	font-family: Tahoma;
+}
+.style54 {
+	color: #E6E0EC;
+	font-size: x-small;
+}
+.style55 {
+	font-family: Tahoma;
+	font-size: large;
+}
+.style57 {
+	color: #E6E0EC;
+}
+.style58 {
+	font-family: Tahoma;
+	font-size: x-small;
+	color: #E6E0EC;
+}
+.style59 {
+	color: #FFFFFF;
+	font-size: 9pt;
+}
+.style60 {
+	font-family: Tahoma;
+	font-size: 9pt;
+}
+-->
+</style></head>
+<body onload="FP_preloadImgs(/*url*/'buttons/button5.jpg',/*url*/'buttons/button6.jpg',/*url*/'buttons/button3E.jpg',/*url*/'buttons/button3F.jpg',/*url*/'buttons/button44.jpg',/*url*/'buttons/button45.jpg',/*url*/'buttons/button4A.jpg',/*url*/'buttons/button4B.jpg',/*url*/'buttons/buttonz6z.jpg',/*url*/'buttons/buttonz7z.jpg',/*url*/'buttons/button3C2.jpg',/*url*/'buttons/button3D2.jpg')" style="background-color: #E6E0EC">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#e6e0ec">
+    <td colspan="3" rowspan="2">
+	<img src="../images/banner.jpg" alt="abs banner" width="382" height="101" /></td>
+    <td height="50" colspan="3" align="center" valign="bottom" nowrap="nowrap" id="logo">
+	Aphra Behn Online:</td>
+    <td width="20">&nbsp;</td>
+  </tr>
+
+  <tr bgcolor="#e6e0ec">
+    <td colspan="3" id="tagline" valign="top" align="center">
+	Interactive Journal for Women in the Arts<br />
+	1640-1830</td>
+	<td width="20"></td>
+  </tr>
+
+  <tr>
+    <td colspan="7" bgcolor="#990066">
+	<img src="../images/mm_spacer.gif" alt="" width="1" height="2" border="0" /></td>
+  </tr>
+
+  <tr>
+
+    <td colspan="7" bgcolor="#99CC66"></td>
+  </tr>
+
+  <tr bgcolor="#f0b1f8">
+  	<td colspan="7" id="dateformat" class="style2" style="height: 40px">&nbsp;&nbsp;<script language="JavaScript" type="text/javascript">
+      </script>	<a href="home.html">
+	<img style="border: 0" id="img1" src="buttons/button4.jpg" height="20" width="100" alt=" Home" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'buttons/button5.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'buttons/button4.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'buttons/button6.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'buttons/button5.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Column 2; fp-font-size: 8; fp-font-color-normal: #FFFFFF; fp-font-color-hover: #FFFFFF; fp-font-color-press: #D5EDB3; fp-justify-horiz: 0; fp-bgcolor: #000000" fp-title=" Home" --></a><a href="currentvolume.html"><img style="border: 0" id="img2" src="buttons/button3B2.jpg" height="20" width="100" alt=" Current Issue" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'buttons/button3C2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'buttons/button3B2.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'buttons/button3D2.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'buttons/button3C2.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Column 2; fp-font-color-normal: #FFFFFF; fp-font-color-hover: #FFFFFF; fp-font-color-press: #D5EDB3; fp-justify-horiz: 0; fp-bgcolor: #000000" fp-title=" Current Issue" --></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="editorialstaff.html">
+	<img style="border: 0" id="img3" src="buttons/buttonz5z.jpg" height="20" width="100" alt=" Editorial Staff" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'buttons/buttonz6z.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'buttons/buttonz5z.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'buttons/buttonz7z.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'buttons/buttonz6z.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Column 2; fp-font-color-normal: #FFFFFF; fp-font-color-hover: #FFFFFF; fp-font-color-press: #D5EDB3; fp-justify-horiz: 0; fp-bgcolor: #000000" fp-title=" Editorial Staff" --></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="submissions.html">
+	<img style="border: 0" id="img4" src="buttons/button3D.jpg" height="20" width="100" alt=" Submissions" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttons/button3E.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'buttons/button3D.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttons/button3F.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'buttons/button3E.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Column 2; fp-font-color-normal: #FFFFFF; fp-font-color-hover: #FFFFFF; fp-font-color-press: #D5EDB3; fp-justify-horiz: 0; fp-bgcolor: #000000" fp-title=" Submissions" --></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="archive.html">
+	<img style="border: 0" id="img5" src="buttons/button43.jpg" height="20" width="100" alt=" Archive" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'buttons/button44.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'buttons/button43.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'buttons/button45.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'buttons/button44.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Column 2; fp-font-color-normal: #FFFFFF; fp-font-color-hover: #FFFFFF; fp-font-color-press: #D5EDB3; fp-justify-horiz: 0; fp-bgcolor: #000000" fp-title=" Archive" --></a>&nbsp;
+	<a href="contactus.html">
+	<img style="border: 0" id="img6" src="buttons/button49.jpg" height="20" width="100" alt=" Contact Us" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'buttons/button4A.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'buttons/button49.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'buttons/button4B.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'buttons/button4A.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Braided Column 2; fp-font-color-normal: #FFFFFF; fp-font-color-hover: #FFFFFF; fp-font-color-press: #D5EDB3; fp-justify-horiz: 0; fp-bgcolor: #000000" fp-title=" Contact Us" --></a></td>
+  </tr>
+  <tr>
+  	<td colspan="7" id="dateformat0" class="style47" style="height: 40px">
+	<span class="style55"><span class="style51"><span class="style52">&nbsp;<span class="style57">|</span></span></span><span class="style57"><strong class="style16"><span class="style50">&nbsp;
+	</span></strong><span class="style50">&nbsp;&nbsp;&nbsp;<script language="JavaScript" type="text/javascript">
+      </script></span></span><span class="style51"><span class="style48"><span class="style52"><span class="style54">
+	</span></span></span></span></span>
+	<span class="style52"><span class="style59">
+	<a href="currentvolume.html#editorsblog" class="style57">Editor&#39;s Blog</a></span></span><span class="style50"><span class="style57">&nbsp;&nbsp;&nbsp;&nbsp;
+	</span><span class="style51">
+	<span class="style55"><span class="style57">|</span></span></span></span><span class="style51"><strong class="style16"><span class="style58">&nbsp;
+	</span></strong></span><span class="style58">&nbsp;&nbsp;&nbsp;<script language="JavaScript" type="text/javascript">
+      </script></span><span class="style48"><span class="style52"><span class="style54">
+	</span>
+	<span class="style59">
+	<a href="currentvolume.html#scholarship" class="style57">Scholarship</a></span></span><span class="style50"><span class="style57">&nbsp;&nbsp;&nbsp;&nbsp;
+	</span><span class="style51">
+	<span class="style55"><span class="style57">|</span></span><span class="style57">&nbsp;&nbsp;&nbsp;&nbsp;
+	</span>
+	</span><span class="style60">
+	<a href="currentvolume.html#pedagogy" class="style57">Pedagogy</a></span><span class="style50"><span class="style57">&nbsp;&nbsp;&nbsp; 
+	<strong class="style16">&nbsp;</strong></span><span class="style55"><span class="style57">|</span></span><span class="style57"><strong class="style16">
+	</strong>&nbsp;&nbsp;&nbsp; </span> 
+	</span><span class="style60">
+	<a href="currentvolume.html#newmedia" class="style57">New Media</a></span><span class="style50"><span class="style57">&nbsp;&nbsp;&nbsp;
+	<strong class="style16">&nbsp;</strong></span><span class="style55"><span class="style57">|</span></span><span class="style57"><strong class="style16">
+	</strong>&nbsp;&nbsp;&nbsp; </span> 
+	</span><span class="style60">
+	<a href="currentvolume.html#bookreviews" class="style57">Book 
+	Reviews</a></span><span class="style50"><span class="style57">&nbsp;&nbsp;&nbsp; <strong class="style16">&nbsp;</strong></span><span class="style55"><span class="style57">|</span></span><span class="style57"><strong class="style16">
+	</strong>&nbsp;&nbsp;&nbsp; </span> 
+	</span><span class="style60">
+	<a href="currentvolume.html#notesanddiscoveries" class="style57">
+	Notes and Discoveries</a></span><span class="style50"><span class="style57">&nbsp;&nbsp;&nbsp; 
+	<strong class="style16">&nbsp;</strong></span><span class="style55"><span class="style57">|</span></span></span></span><span class="style57">&nbsp;&nbsp;
+	</span>
+	</span></td>
+  </tr>
+  <tr>
+    <td colspan="7" bgcolor="#99CC66" background="../mm_dashed_line.gif"></td>
+
+  </tr>
+
+  <tr>
+    <td colspan="7" bgcolor="#990066">
+	<img src="../images/mm_spacer.gif" alt="" width="1" height="2" border="0" /></td>
+  </tr>
+
+ <tr>
+    <td valign="top" class="style3" style="width: 269px">
+ 	&nbsp;<br />
+  	&nbsp;<strong><span class="style8"><span class="style34">&nbsp;</span><span class="style42">
+	</span>Current Volume
+	</span> </strong><span class="style24"><span class="style34"><br />
+	<br />
+	</span>
+	<strong><span class="style34">&nbsp;&nbsp; Editors&#39; Blog 2011 by . . .<br />
+	<br />
+&nbsp;&nbsp; </span> </strong>
+	<span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;"><span style="mso-bidi-font-style: normal"> <span class="style11">
+			<span class="style33">•</span></span></span></span><span style="mso-bidi-font-style: normal"><strong><span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;">
+	</span></strong><span class="style34">
+	<span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;" class="style34">
+	<a href="volume1/blog/2011.html">Laura Runge</a></span><span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;"><br />
+	</span></span>
+	<span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;">&nbsp;<span class="style34"><br />
+&nbsp;&nbsp; <strong>Scholarship by</strong></span></span></span><strong><span class="style34"> 
+	. . .</span></strong><span style="mso-bidi-font-style: normal"><span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;"><span class="style34"><strong><br />
+	</strong><br />
+&nbsp;&nbsp; • </span><span class="style11"><span><span class="style34">
+	<a href="volume1/scholarship/kairoff.html">Claudia Thomas Kairoff</a></span></span><span class="style34"><br />
+	<br />
+&nbsp;&nbsp; • <span class="style27">
+	<span style="line-height: 115%; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style36">
+	<a href="volume1/scholarship/bobker.html">Danielle Bobker</a></span></span><br />
+	<br />
+&nbsp;&nbsp; • <a href="volume1/scholarship/ingrassia.html">Catherine Ingrassia</a><br />
+	<br />
+&nbsp;&nbsp; •
+			<span class="style33">
+			<span class="style27">
+	<span style="line-height: 115%; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style38">
+	<a href="volume1/scholarship/kittredge.html">Katharine Kittredge</a></span></span></span><br />
+	<br />
+&nbsp;&nbsp; <strong>Pedagogy by</strong></span></span></span></span><strong><span class="style34"> 
+	. . .</span></strong><span style="mso-bidi-font-style: normal"><span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;"><span class="style11"><span class="style34"><strong><br />
+	</strong><br />
+&nbsp;&nbsp; • <span class="style21"><span class="style33">
+	<span class="style27">
+	<span style="line-height: 115%; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style38">
+	<a href="volume1/pedagogy/kraft.html">Elizabeth Kraft</a><br />
+	</span></span></span></span><br />
+			&nbsp;&nbsp; <strong>New Media / 
+	Women on the<br />
+&nbsp;&nbsp;&nbsp;Web by</strong></span></span></span></span><strong><span class="style34"> 
+	. . .</span></strong><span style="mso-bidi-font-style: normal"><span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;"><span class="style11"><span class="style34"><strong><br />
+	<br />
+&nbsp;&nbsp;&nbsp;</strong>• <a href="volume1/newmedia/bowles.html">Emily Bowles</a><br />
+	<br />
+	&nbsp;&nbsp; <strong>Book Reviews by</strong></span></span></span></span><strong><span class="style34"> 
+	. . .</span></strong><span style="mso-bidi-font-style: normal"><span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;"><span class="style11"><span class="style34"><strong><br />
+	</strong>
+			<br />
+			&nbsp;&nbsp; •
+	<span style="line-height: 115%; mso-fareast-font-family: &quot;Times New Roman&quot;; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA" class="style40">
+	<a href="volume1/reviews/golightly.html">Jennifer Golightly</a><br />
+	<br />
+&nbsp;&nbsp;&nbsp;• <a href="volume1/reviews/nelson.html">Holly Faith Nelson</a><br />
+&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;• <a href="volume1/reviews/wiegand.html">Dometa Wiegand</a><em>&nbsp; </em> </span></span></span>
+	<span class="style34">&nbsp; </span> </span></span></span><br />
+  	&nbsp;<br />
+  	&nbsp;<br />
+	</td>
+    <td width="50" class="style11">
+	<img src="../images/mm_spacer.gif" alt="" width="50" height="1" border="0" /></td>
+
+    <td colspan="2" valign="top" class="style11" style="width: 29px">
+	<img src="../images/mm_spacer.gif" alt="" width="305" height="1" border="0" /><br />
+	&nbsp;<br />
+	&nbsp;<br />
+	<table border="0" cellspacing="0" cellpadding="0" style="width: 645px">
+        <tr>
+          <td class="style25">About <em>Aphra Behn Online:</em><span class="style16"><strong><br />
+			</strong></span><em>Interactive Journal for Women in the Arts 
+			1640-1830<br />
+			________________________________________________<br />
+			</em>
+			</td>
+		</tr>
+
+		<tr>
+
+          <td class="style26">
+			<i style="mso-bidi-font-style: normal">
+			<span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;">
+			<br />
+			Aphra Behn Online</span></i><span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;"> 
+			is an online annual publication that serves as a forum for 
+			interactive scholarly discussion on all aspects of women in arts 
+			between 1640 and 1830, especially literature, visual arts, music, 
+			performance art, film criticism, and production arts. The journal 
+			features peer-reviewed articles encompassing subjects on a global 
+			range and is intended for scholars and students.<span style="mso-spacerun: yes">&nbsp;
+			</span>The journal is comprised of four divisions: Scholarship; 
+			Pedagogy; New Media Applications/ Women on the Web; and Reviews.<br />
+			<br />
+			<o:p><span class="style11">
+			<span style="mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin" class="style21"> 
+			ISSN: 2157-7129<br />
+			<br />
+			</span></span><a href="Aphra_Online_Vol_1_Announcement.pdf">Volume 1 Announcement</a></o:p><o:p><br />
+			<br />
+			<span class="style11"><a href="Aphra_Online_Vol_2_CFP.pdf">Volume 2 Call for Submissions</a></span><o:p><br />
+			<br />
+			<span class="style11"><a href="copyright.html">Copyright Statement</a><em><span class="style21"><br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+<!-- Start of SimpleHitCounter Code -->
+<div align="center"><a href="http://www.simplehitcounter.com" target="_blank"><img src="http://simplehitcounter.com/hit.php?uid=1047459&f=16711935&b=16777215" border="0" height="18" width="83" alt="web counter"></a><br><a href="http://www.simplehitcounter.com" target="_blank" style="text-decoration:none;">web counter</a><br />
+			</div>
+<!-- End of SimpleHitCounter Code -->
+
+			</span>
+			</em></span></o:p></o:p>
+			</span></td>
+
+        </tr>
+
+		<tr>
+
+          <td class="style43">
+			<span style="mso-bidi-font-size: 12.0pt; mso-bidi-font-family: &quot;Times New Roman&quot;"><span class="style11"><em><span class="style21">
+			<a href="Aphra_Online_Vol_2_CFP.pdf"></a></span></em></span></span></td>
+
+        </tr>
+      </table>
+	</td>
+    <td width="50" class="style11">&nbsp;</td>
+        <td width="205" valign="top" class="style34">&nbsp;<br />
+
+		<table border="0" cellspacing="0" cellpadding="0" width="190" id="leftcol">
+
+	   <tr>
+       <td width="10" class="style34">
+		<img src="../../images/mm_spacer.gif" alt="" width="10" height="1" border="0" /></td>
+		<td width="170" class="style44"><span class="style45">
+		<a href="http://www.aphrabehn.org">The Aphra Behn Society</a></span><br />
+			<span class="style46">The organization that administers<em> Aphra Behn 
+			Online</em>.<br />
+		<br />
+		<br />
+		</span>
+		<span class="style45"><a href="affiliatedsites.html">Affiliated 
+		Websites</a></span><span class="style46"><br />
+		<br />
+		<br />
+		</span>
+		<a href="http://www.facebook.com/pages/The-Aphra-Behn-Society/151718775488#!/pages/Aphra-Behn-Online/141531062526268?ref=ts">
+		<span class="style45">
+		<em>Aphra Behn 
+		Online</em> on Facebook</span></a><span class="subHeader">:</span><br/><a href="http://www.facebook.com/pages/Aphra-Behn-Online/141531062526268" target="_TOP" title="Aphra Behn Online"><img src="http://badge.facebook.com/badge/141531062526268.1959.1188540202.png" width="120" height="120" style="border: 0px;" /></a><br/><br />
+
+			&nbsp;&nbsp;<br />
+
+			&nbsp;<br />          </td>
+         <td width="10" class="style34">&nbsp;</td>
+        </tr>
+      </table>	<br />
+		<br />
+	</td>
+	<td width="20">&nbsp;</td>
+  </tr>
+  </table>
+</body>
+</html>
+
